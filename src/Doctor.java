@@ -5,9 +5,9 @@ public class Doctor {
     private String speciality;
 
     public Doctor(String name, String speciality) {
+        id++;
         this.name=name;
         this.speciality=speciality;
-        id++;
     }
 
     public void showSpeciality() {
