@@ -1,11 +1,14 @@
 import static ui.UIMenu.*;
-import static tools.Calculator.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Doctor doc = new Doctor("Ignacio Cassi","Obstetricia");
-        Doctor doc2 = new Doctor("Roberto Gonzales","Otorrinolaringólogo");
-        showMenu();
+        Doctor doc = new Doctor("Ignacio Cassi","Otorrinolargingólogo");
+        Patient pat = new Patient("Daniel Cassi", "nacho.cassi97@gmail.com");
+        //showMenu();
+        pat.setPhonenumber("23424354");
+        pat.setWeight(54.0);
+        pat.getWeightKg();
         
+
     }
 }
