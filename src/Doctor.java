@@ -11,6 +11,11 @@ public class Doctor extends User {
         id++;
     }
 
+    @Override
+    public String toString() {
+        return super.toString()+" Speciality: "+speciality+".\nAvailable"+AvailableAppointments.toString()+".";
+    }
+
     public void showSpeciality() {
         if (speciality != null) {
             System.out.println("The doctor's speciality is: "+speciality+".");
@@ -75,6 +80,11 @@ public class Doctor extends User {
 
         public void setTime(String time) {
             this.time=time;
+        }
+
+        @Override
+        public String toString() {
+            return "Available appointments: "+date+" Time: "+time;
         }
 
     }
