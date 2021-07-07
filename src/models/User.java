@@ -1,10 +1,16 @@
+package models;
 public class User {
+
     private int id;
     private String name;
     private String email;
     private String address;
     private String phonenumber;
 
+    public User(String name, String email) {
+        this.name=name;
+        this.email=email;
+    }
 
     public User(int id, String name, String email, String address, String phonenumber) {
         this.id = id;
@@ -12,13 +18,9 @@ public class User {
         this.email = email;
         this.address = address;
         this.phonenumber = phonenumber;
+        id++;
     }
-
-    public User(String name, String email) {
-        this.name=name;
-        this.email=email;
-    }
-
+    
     @Override
     public String toString() {
         return "User: "+name+", Email: "+email+"\nAddress: "+address+" Phone: "+phonenumber+".";
@@ -66,8 +68,6 @@ public class User {
         } else if (phonenumber.length()==8) {
             this.phonenumber = phonenumber;
         }
-        
     }
 
-    
 }

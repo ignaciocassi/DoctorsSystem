@@ -1,5 +1,8 @@
 import static ui.UIMenu.*;
 import java.util.Date;
+
+import models.Doctor;
+import models.Patient;
 public class App {
     public static void main(String[] args) throws Exception {
 
