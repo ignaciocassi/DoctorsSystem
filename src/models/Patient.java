@@ -11,6 +11,11 @@ public class Patient extends User {
     }
 
     @Override
+    public void showDataUser() {
+        System.out.println("Paciente.");
+    }
+
+    @Override
     public String toString() {
         return super.toString()+"\nBirthday: "+birthday+" Weight: "+weight+"\nHeight: "+height+" Bloodtype: "+blood+".";
     }

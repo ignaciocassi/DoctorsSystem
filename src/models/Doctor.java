@@ -10,6 +10,11 @@ public class Doctor extends User {
         super(name,email);
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado Hospital Municipal.");
+    }
+
     public void showSpeciality() {
         if (speciality != null) {
             System.out.println("The doctor's speciality is: "+speciality+".");

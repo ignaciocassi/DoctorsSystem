@@ -22,6 +22,8 @@ public abstract class User {
         id++;
     }
     
+    public abstract void showDataUser();
+
     @Override
     public String toString() {
         return "User: "+name+", Email: "+email+"\nAddress: "+address+" Phone: "+phonenumber+".";
