@@ -1,4 +1,5 @@
 package models;
+
 public class Patient extends User {
 
     private String birthday;
@@ -7,7 +8,7 @@ public class Patient extends User {
     private String blood;
 
     public Patient(String name, String email) {
-        super(name,email);
+        super(name, email);
     }
 
     @Override

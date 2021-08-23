@@ -1,10 +1,12 @@
 package models;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Doctor extends User {
 
     private String speciality;
+    List<AvailableAppointment> AvailableAppointments = new ArrayList<>();
 
     public Doctor(String name, String email) {
         super(name,email);
@@ -36,8 +38,6 @@ public class Doctor extends User {
         this.speciality = speciality;
     }
 
-    ArrayList<AvailableAppointment> AvailableAppointments = new ArrayList<>();
-
     public void addAvailableAppointment(Date date, String time) {
         AvailableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
@@ -48,11 +48,12 @@ public class Doctor extends User {
         }
     }
 
-    public ArrayList<AvailableAppointment> getAvailableAppointments() {
+    public List<AvailableAppointment> getAvailableAppointments() {
         return AvailableAppointments;
     }
 
     public static class AvailableAppointment {
+
         int id;
         Date date;
         String time;
@@ -82,6 +83,7 @@ public class Doctor extends User {
         public String toString() {
             return "Available appointments: "+date+" Time: "+time;
         }
+        
     }
 
 }

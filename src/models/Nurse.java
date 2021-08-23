@@ -21,5 +21,4 @@ public class Nurse extends User {
         this.speciality = speciality;
     }
 
-    
 }
