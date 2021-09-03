@@ -24,6 +24,10 @@ public abstract class User {
     }
     
     public abstract void showDataUser();
+    
+    public void showWelcomeMessage() {
+        System.out.println("Bienvenido, "+name+".");
+    };
 
     @Override
     public String toString() {
